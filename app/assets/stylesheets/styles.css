@@ -33,7 +33,11 @@ background-image:url();
 }
 
 .devise {
+  background-color: rgba(52, 152, 219,.3);
   margin-top: 100px;
+  border: 2px solid;
+  
+  /*float: center;*/
 }
 
 body {

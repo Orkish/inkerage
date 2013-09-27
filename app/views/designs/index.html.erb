@@ -13,6 +13,16 @@
       <br />
     <% end %>
   <% end %>
+
+   <% @img["posts"].each do |img| %>
+    <%= form_tag('/users/profile', :method => :post) do |f| %>
+      <% img = img["photos"][0]['alt_sizes'][1]["url"] %>
+      <img src="<%= img %>" /><br />
+      <input type="hidden" name="designs[url]" value="<%= img %>">
+      <input type="submit" value="Add Favorites!" />
+      <br />
+    <% end %>
+  <% end %>
     
   <% @pix["posts"].each do |pic1| %>
     <%= form_tag('/users/profile', :method => :post) do |f| %>

@@ -5,6 +5,7 @@ class DesignsController < ApplicationController
   client = Tumblr::Client.new(:client => :httpclient)
   @picture = client.posts("blackdwork.tumblr.com/", :type => "photo", :limit => 150)
   @pix = client.posts("get-fucked-and-get-inked.tumblr.com/", :type => "photo", :limit => 200)
+  @img = client.posts("tattoosandtutus.tumblr.com/", :type => "photo", :limit => 200)
   #use the @variable if you want to display it in views
   end
 
