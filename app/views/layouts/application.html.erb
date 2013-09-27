@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+<containter class="container">
+<div class="nav">
+  <h1 class="offset-by-three eight columns text" id="title">Welcome to Inkerage!</h1>
+  <div class="text">
+    <% if user_signed_in? %>
+      Logged in as <%= current_user.email %> | <%= link_to("log out as User", destroy_user_session_path, :method => :delete) %><br /> Go back to <%= link_to "My Profile", user_profile_path %> | Log out of <%= link_to "Artist", destroy_artist_session_path, :method => :delete %><br />
+      <h4>View more <%= link_to "Tattoos", design_index_path %>!</h4>
+    <% end %>
+</div>
+</div>
+</containter>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+<div class="footer">
+</div>
 <%= yield %>
 
 </body>

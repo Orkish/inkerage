@@ -1,11 +1,6 @@
 class DeviseCreateArtists < ActiveRecord::Migration
   def change
     create_table(:artists) do |t|
-      t.string :username
-      t.string :name
-      t.string :location
-      t.text :bio
-      t.string :experience
       ## Database authenticatable
       t.string :email,              :null => false, :default => ""
       t.string :encrypted_password, :null => false, :default => ""

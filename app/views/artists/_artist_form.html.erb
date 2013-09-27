@@ -1,0 +1,14 @@
+<%= form_for artist do |f| %>
+  <%= f.label "Username" %>
+  <%= f.text_area :username, :size => "20" %>
+  <%= f.label "Name" %>
+  <%= f.text_area :name, size: "20" %>
+  <%= f.label "Location" %>
+  <%= f.text_area :location, size: "20" %>
+  <%= f.label "Bio" %>
+  <%= f.text_area :bio, size: "200" %>
+  <%= f.label "Experience" %>
+  <%= f.text_area :experience, size: "50" %>
+  <%= f.submit %>
+
+<% end %>

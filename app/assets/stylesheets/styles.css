@@ -1,0 +1,46 @@
+.nav {
+background-image:url(wave.jpg);
+position: fixed;
+top: 0;
+height: 75px;
+width: 100%;
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+border-bottom: 2px solid;
+z-index: 3;
+}
+.footer{
+background-image:url();
+  Position: fixed;
+  Width: 100%;
+  Bottom: 0;
+  Height: 75px;
+}
+
+.images {
+  margin-top: 100px;
+}
+
+.text {
+  color: rgba(52, 152, 219,1.0);
+  float: right;
+  margin: 0px 10px 0px 0px;
+  
+}
+
+.headers {
+  color: rgba(52, 152, 219,1.0);
+}
+
+.devise {
+  margin-top: 100px;
+}
+
+body {
+  background-color: rgba(189, 195, 199,1.0);
+}
+
+
+
+
+

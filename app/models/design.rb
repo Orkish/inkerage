@@ -1,5 +1,5 @@
 class Design < ActiveRecord::Base
-  attr_accessible :title, :body_location, :artist, :story
+  attr_accessible :url
 
   belongs_to :user
   belongs_to :artist

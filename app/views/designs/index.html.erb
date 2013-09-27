@@ -1,0 +1,27 @@
+<container class="container">
+
+
+  <div class="offset-by-five images">
+  <h4 class="headers">Add to Favorites!</h4>
+
+  <% @picture["posts"].each do |pic| %>
+    <%= form_tag('/users/profile', :method => :post) do |f| %>
+      <% img = pic["photos"][0]['alt_sizes'][1]["url"] %>
+      <img src="<%= img %>" /><br />
+      <input type="hidden" name="designs[url]" value="<%= img %>">
+      <input type="submit" value="Add Favorites!" />
+      <br />
+    <% end %>
+  <% end %>
+    
+  <% @pix["posts"].each do |pic1| %>
+    <%= form_tag('/users/profile', :method => :post) do |f| %>
+      <% img = pic1["photos"][0]['alt_sizes'][1]["url"] %>
+      <img src="<%= img %>" /><br />
+      <input type="hidden" name="designs[url]" value="<%= img %>">
+      <input type="submit" value="Add Favorites!" />
+      <br />
+    <% end %>
+  <% end %>
+</div>
+</container>

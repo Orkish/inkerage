@@ -1,0 +1,11 @@
+<%= form_for user do |f| %>
+  <%= f.label "Username" %>
+  <%= f.text_field :username, :size => "20", :placeholder => "username" %>
+  <%= f.label "Contact" %>
+  <%= f.text_field :contact, size: "50", :placeholder => "contact"%>
+  <%= f.label "Picture" %>
+  <%= f.text_field :profile_pic, size: "50", :placeholder => "put in URL" %>
+
+  <%= f.submit %>
+
+<% end %>
