@@ -27,6 +27,9 @@ background-image:url();
   margin: 0px 10px 0px 0px;
   
 }
+.line {
+  padding-bottom: 20px;
+}
 
 .headers {
   color: rgba(52, 152, 219,1.0);

@@ -2,7 +2,7 @@
 <div class="offset-by-five images">
 <h4 class="headers">This is your profile!</h4>
   <!-- Create new <%= link_to "profile", users_profile_path %> -->
-  Hello, <%= current_user.email %>! | Please add some <%= link_to "Tattoos", design_index_path %> to your fav list!
+  <div class="line">Hello, <%= current_user.email %>! | Please add some <%= link_to "Tattoos", design_index_path %> to your fav list!</div>
 <ul>
   <% @design.each do |design| %>
     <li><img src="<%= design.url %>"></li>
