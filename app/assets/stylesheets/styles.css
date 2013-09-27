@@ -22,7 +22,8 @@ background-image:url();
 }
 
 .text {
-  color: rgba(52, 152, 219,1.0);
+  color: #FFF;
+  /*color: rgba(52, 152, 219,1.0);*/
   float: right;
   margin: 0px 10px 0px 0px;
   
