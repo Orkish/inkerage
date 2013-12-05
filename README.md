@@ -1,4 +1,4 @@
-==Inkerage
+Inkerage
 
 The very first Rails app I have ever built.
 
